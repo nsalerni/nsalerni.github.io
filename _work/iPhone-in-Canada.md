@@ -1,6 +1,6 @@
 ---
 title: iPhone in Canada
-tags: Visual Design, HTML, CSS
+tags: News, Apple, iOS, Mac, Blog
 order: 3
 ---
 

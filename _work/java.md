@@ -1,6 +1,6 @@
 ---
 title: Java
-tags: Visual Design, HTML, CSS
+tags: Java, Programming, Software Development
 order: 4
 ---
 

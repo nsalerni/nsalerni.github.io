@@ -1,6 +1,6 @@
 ---
 title: Robotics
-tags: Visual Design, HTML, CSS
+tags: Robots, Arduino, Electrical Circuits
 order: 6
 ---
 

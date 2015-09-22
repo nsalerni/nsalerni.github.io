@@ -1,6 +1,6 @@
 ---
 title: Presto Balance Checker
-tags: Branding, Visual Design, HTML, CSS
+tags: Python, Presto Card, Go Transit
 order: 1
 ---
 
