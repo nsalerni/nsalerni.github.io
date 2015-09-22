@@ -39,5 +39,52 @@
     .post-header__tags {
       color: $gray;
     }
+    .post-footer {
+      @extend %clearfix;
+      border-top: 1px solid $border-light;
+      border-bottom: 1px solid $border-light;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  .post-footer__item {
+    float: left;
+    margin: 0;
+    width: 50%;
+
+    &:only-of-type { width: 100%; }
+  }
+
+  .post-footer__link {
+    @include ellipsis;
+    @include transition (background $duration $timing);
+    border-left: 1px solid $border-light;
+    color: $gray;
+    display: block;
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+
+    @media #{$medium} {
+      padding: 2rem 4rem;
+    }
+
+    &:hover { background: $light-gray; }
+  }
+}
+
+.post-footer__title {
+  @include ellipsis;
+  color: $black;
+  font-weight: $bold;
+  margin: 0;
+}
+
+.post-footer__subtitle {
+  color: $gray;
+  font-size: .9rem;
+  margin: 0;
+}
+
 </style>
 </head> 
