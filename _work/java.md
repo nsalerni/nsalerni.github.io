@@ -1,5 +1,5 @@
 ---
-title: Citypak Case Study
+title: Java
 tags: Visual Design, HTML, CSS
 order: 1
 ---

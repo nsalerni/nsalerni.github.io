@@ -1,5 +1,5 @@
 ---
-title: CSS Workshop
+title: Presto Balance Checker
 tags: Branding, Visual Design, HTML, CSS
 order: 5
 ---
