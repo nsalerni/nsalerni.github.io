@@ -1,7 +1,7 @@
 ---
 title: Java
 tags: Visual Design, HTML, CSS
-order: 1
+order: 4
 ---
 
 [The Citypak Project](http://www.citypak.org) is a non-profit organization that provides safe, convenient and versatile backpacks uniquely designed to meet the needs of the homeless. I have been helping design and build the website for over a year.

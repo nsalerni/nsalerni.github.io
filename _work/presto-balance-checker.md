@@ -1,7 +1,7 @@
 ---
 title: Presto Balance Checker
 tags: Branding, Visual Design, HTML, CSS
-order: 5
+order: 1
 ---
 
 In this [three part workshop](http://www.adamkaplan.me/css-workshop), [Stephanie Briones](http://www.stephaniebriones.com) and I [covered CSS best practices](https://github.com/aekaplan/css-workshop/blob/gh-pages/README.md) including code organization, reusability and more advanced techniques.
