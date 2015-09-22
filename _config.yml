@@ -1,7 +1,7 @@
 # Site settings
-name: Adam Kaplan
-title: Adam Kaplan
-description: "Designer"
+name: Nick Salerni
+title: Nick Salerni
+description: "Developer"
 permalink: /blog/:title
 highlighter: pygments
 
