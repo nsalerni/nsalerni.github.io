@@ -2,139 +2,151 @@
 ========================================================================== */
 
 .work {
-  @extend %clearfix;
-  @include clean-list;
+    @extend %clearfix;
+    @include clean-list;
 }
 
 .work__item {
-  border-bottom: 1px solid $border-light;
-  width: 100%;
-
-  &:last-of-type { border-bottom: 0; }
-
-  @media #{$medium} {
-    border-right: 1px solid $border-light;
-    float: left;
-    width: 50%;
-  }
-
-  @media #{$medium} and (max-width: 64em) {
-    &:nth-child(2n+1):nth-last-child(-n+2),
-    &:nth-child(2n+1):nth-last-child(-n+2) ~ & {
-      border-bottom: 0;
+    border-bottom: 1px solid $border-light;
+    width: 100%;
+    &:last-of-type {
+        border-bottom: 0;
     }
-
-    &:nth-of-type(2n) { border-right: 0; }
-  }
-
-  @media #{$large} {
-    width: 33.333%;
-
-    &:nth-child(3n+1):nth-last-child(-n+3),
-    &:nth-child(3n+1):nth-last-child(-n+3) ~ & {
-      border-bottom: 0;
-      border-right: 1px solid $border-light;
+    @media #{$medium} {
+        border-right: 1px solid $border-light;
+        float: left;
+        width: 50%;
     }
-
-    &:nth-of-type(3n) { border-right: 0 !important; }
-  }
+    @media #{$medium} and (max-width: 64em) {
+        &:nth-child(2n+1):nth-last-child(-n+2),
+        &:nth-child(2n+1):nth-last-child(-n+2) ~ & {
+            border-bottom: 0;
+        }
+        &:nth-of-type(2n) {
+            border-right: 0;
+        }
+    }
+    @media #{$large} {
+        width: 33.333%;
+        &:nth-child(3n+1):nth-last-child(-n+3),
+        &:nth-child(3n+1):nth-last-child(-n+3) ~ & {
+            border-bottom: 0;
+            border-right: 1px solid $border-light;
+        }
+        &:nth-of-type(3n) {
+            border-right: 0 !important;
+        }
+    }
 }
 
 .work__link {
-  @include transition (background $duration $timing);
-  display: block;
-  padding: 2rem 0;
-  text-align: center;
-  text-decoration: none;
-
-  &:hover {
-    background: $light-gray;
+    @include transition (background $duration $timing);
+    display: block;
+    padding: 2rem 0;
+    text-align: center;
     text-decoration: none;
-  }
-
-  @media #{$medium} {
-    padding: 3.5rem 0;
-  }
+    &:hover {
+        background: $light-gray;
+        text-decoration: none;
+    }
+    @media #{$medium} {
+        padding: 3.5rem 0;
+    }
 }
 
 .work__title,
 .work__description {
-  margin: 0;
+    margin: 0;
 }
 
 .work__description {
-  color: $gray;
-  font-size: .9rem;
+    color: $gray;
+    font-size: .9rem;
 }
+
 
 /* Work Logos
 ========================================================================== */
 
 .work__logo {
-  background-repeat: no-repeat;
-  height: 48px;
-  margin: 0 auto 1.2rem;
-  width: 48px;
-
-  &.work__logo--android-malware-demo { background-image: url("/assets/images/work/logo/android.svg"); }
-  &.work__logo--ios { background-image: url("/assets/images/work/logo/swift.png"); }
-  &.work__logo--iphone-in-canada { background-image: url("/assets/images/work/logo/iic.png"); }
-  &.work__logo--java { background-image: url("/assets/images/work/logo/java.svg"); }
-  &.work__logo--presto-balance-checker { background-image: url("/assets/images/work/logo/train.svg"); }
-  &.work__logo--robotics { background-image: url("/assets/images/work/logo/drone.png"); }
+    background-repeat: no-repeat;
+    height: 48px;
+    margin: 0 auto 1.2rem;
+    width: 48px;
+    &.work__logo--android-malware-demo {
+        background-image: url("/assets/images/work/logo/android.svg");
+    }
+    &.work__logo--ios {
+        background-image: url("/assets/images/work/logo/swift.png");
+    }
+    &.work__logo--iphone-in-canada {
+        background-image: url("/assets/images/work/logo/iic.png");
+    }
+    &.work__logo--java {
+        background-image: url("/assets/images/work/logo/java.svg");
+    }
+    &.work__logo--presto-balance-checker {
+        background-image: url("/assets/images/work/logo/train.svg");
+    }
+    &.work__logo--robotics {
+        background-image: url("/assets/images/work/logo/drone.png");
+    }
 }
+
 
 /* Browser
 ========================================================================== */
 
 .browser {
-  border-radius: 4px;
-  border: 1px solid $border-light;
-  margin-bottom: 1.5rem;
-  max-height: 25rem;
-  overflow: hidden;
-
-  img { margin: 0; }
+    border-radius: 4px;
+    border: 1px solid $border-light;
+    margin-bottom: 1.5rem;
+    max-height: 25rem;
+    overflow: hidden;
+    img {
+        margin: 0;
+    }
 }
 
 .browser--mobile {
-  margin: 0 auto 1.5rem;
-  max-width: 20rem;
-  max-height: 30rem;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-
-  @media #{$medium} {
-    float: left;
-    margin: 0;
-    width: 48%;
-
-    &:last-of-type { margin-left: 4%; }
-    &:only-of-type { margin-left: 0; }
-  }
+    margin: 0 auto 1.5rem;
+    max-width: 20rem;
+    max-height: 30rem;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    @media #{$medium} {
+        float: left;
+        margin: 0;
+        width: 48%;
+        &:last-of-type {
+            margin-left: 4%;
+        }
+        &:only-of-type {
+            margin-left: 0;
+        }
+    }
 }
 
 .browser__header {
-  @extend %clearfix;
-  background: $border-light;
-  border-radius: 4px 4px 0 0;
-  padding: .6rem .5rem;
+    @extend %clearfix;
+    background: $border-light;
+    border-radius: 4px 4px 0 0;
+    padding: .6rem .5rem;
 }
 
 .spotlights {
-  @extend %clearfix;
-  @include clean-list;
+    @extend %clearfix;
+    @include clean-list;
 }
 
 .spotlights__item {
-  background: #ccc;
-  border-radius: 60%;
-  display: block;
-  float: left;
-  height: 10px;
-  margin-bottom: 0;
-  margin-right: .3rem;
-  width: 10px;
+    background: #ccc;
+    border-radius: 60%;
+    display: block;
+    float: left;
+    height: 10px;
+    margin-bottom: 0;
+    margin-right: .3rem;
+    width: 10px;
 }

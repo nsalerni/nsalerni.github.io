@@ -1,10 +1,6 @@
----
----
-
-// Variables and mixins
+--- --- // Variables and mixins
 @import "settings";
 @import "mixins";
-
 // Components
 @import "components/normalize";
 @import "components/layout";
@@ -16,6 +12,5 @@
 @import "components/post";
 @import "components/work";
 @import "components/mobile-first";
-
 // Utilities
 @import "components/utilities";
