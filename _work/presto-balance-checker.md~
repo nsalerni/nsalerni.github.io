@@ -5,5 +5,3 @@ order: 1
 ---
 
 This project is a working [Python script](https://github.com/nsalerni/Presto-Card-Balance-Checker) that allows GTA (Greater Toronto Area)-based commuters to check their Presto Card balance by running a simple script.
-
-View the source code of the script from the [following GitHub page](https://github.com/nsalerni/Presto-Card-Balance-Checker).
