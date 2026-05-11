@@ -2,85 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="0; url=https://androidex.vercel.app/" />
+    <link rel="canonical" href="https://androidex.vercel.app/" />
     <title>Androidex</title>
-    <meta
-      name="description"
-      content="Install Androidex, the Android companion for Codex on Mac."
-    />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000'/%3E%3Cpath d='M21 28h22v18a4 4 0 0 1-4 4H25a4 4 0 0 1-4-4V28Zm6-9-4-7m14 7 4-7M21 25h22m-28 7v12m34-12v12' fill='none' stroke='%23fff' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='27' cy='36' r='1.8' fill='%23fff'/%3E%3Ccircle cx='37' cy='36' r='1.8' fill='%23fff'/%3E%3C/svg%3E" />
-    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main class="shell">
-      <section class="hero" aria-labelledby="title">
-        <p class="eyebrow">androidex.</p>
-        <h1 id="title">Pair Android with Codex on your Mac.</h1>
-        <p class="intro">
-          Install the Codex skill, install the Android app, then scan the QR
-          code shown by <code>/androidex</code>.
-        </p>
-      </section>
-
-      <section class="steps" aria-label="Install steps">
-        <article class="step">
-          <span class="step-number">1</span>
-          <div>
-            <h2>Install the Codex skill</h2>
-            <div class="command-row">
-              <code id="install-command">npx @thecsguy/androidex install-skill</code>
-              <button type="button" id="copy-command">Copy</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="step">
-          <span class="step-number">2</span>
-          <div>
-            <h2>Install the Android app</h2>
-            <p>
-              Open this page on your Android phone and download the APK.
-              Android may ask you to allow installs from your browser.
-            </p>
-            <a
-              class="download"
-              href="./androidex-v0.1.0-debug.apk"
-              download
-            >
-              Download Android APK
-            </a>
-          </div>
-        </article>
-
-        <article class="step">
-          <span class="step-number">3</span>
-          <div>
-            <h2>Pair your phone</h2>
-            <p>
-              In Codex on your Mac, run <code>/androidex</code>. Scan the QR
-              code with the Android app.
-            </p>
-          </div>
-        </article>
-      </section>
-    </main>
-
-    <script>
-      const button = document.querySelector("#copy-command");
-      const command = document.querySelector("#install-command").textContent;
-
-      button.addEventListener("click", async () => {
-        if (navigator.clipboard) {
-          await navigator.clipboard.writeText(command);
-          button.textContent = "Copied";
-        } else {
-          button.textContent = "Select command";
-        }
-
-        setTimeout(() => {
-          button.textContent = "Copy";
-        }, 1600);
-      });
-    </script>
+    <p>
+      Androidex moved to
+      <a href="https://androidex.vercel.app/">androidex.vercel.app</a>.
+    </p>
   </body>
 </html>
